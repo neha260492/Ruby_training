@@ -7,6 +7,6 @@ class String
 				frequency[i] = self.count(i)
 			end
 		end
-		return frequency
+		frequency
 	end
 end
