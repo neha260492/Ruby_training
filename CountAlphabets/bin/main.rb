@@ -1,4 +1,4 @@
 require_relative "../lib/string"
 
-line = String.new("neha agrawal")
+line = "neha agrawal"
 p line.count_alphabets
