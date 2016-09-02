@@ -4,9 +4,9 @@ class Fibonacci
     b = 1
     yield a
     while b <= 1000
-    	yield b
-    	b = a + b
-    	a = b - a
+      yield b
+      b = a + b
+      a = b - a
     end
   end
 end
