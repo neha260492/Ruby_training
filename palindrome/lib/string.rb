@@ -1,10 +1,10 @@
 class String
-  def palindrome
+  def palindrome?
     str = downcase
     if str == str.reverse
-      puts "#{str} is a palindrome"
+      true
     else
-      puts "#{str} is not a palindrome"
+      false
     end
   end
 end
