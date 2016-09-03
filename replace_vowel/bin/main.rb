@@ -1,4 +1,4 @@
-require_relative "../lib/vowel"
+require_relative "../lib/string"
 
-line = Vowel.new
-puts line.replace_vowels(gets)
+line = gets
+puts line.replace_vowel
