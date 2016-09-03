@@ -1,4 +1,4 @@
-require_relative "../lib/fibonacci"
+require_relative "../lib/series"
 
-fib = Fibonacci.new
-fib.call_block {|f| print f, " "}
+fib= Series.new(1000)
+fib.fibonacci {|number| print number, " "}
