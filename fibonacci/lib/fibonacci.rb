@@ -10,12 +10,3 @@ class Fibonacci
     end
   end
 end
-
-
-  
-
-
-
-
-
-

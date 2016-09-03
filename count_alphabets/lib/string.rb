@@ -9,4 +9,3 @@ class String
     frequency
   end
 end
-
