@@ -1,7 +1,7 @@
 class Customer
-	@@serial_no = 1000000
+  @@serial_no = 1000000
 
-	attr_reader :name, :account_no, :balance
+  attr_reader :name, :account_no, :balance
 
   def initialize(name)
     @@serial_no += 1
