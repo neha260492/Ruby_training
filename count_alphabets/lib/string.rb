@@ -3,8 +3,8 @@ class String
     downcase
     s = delete(" ")
     frequency = Hash.new(0)
-    for i in 0..s.length - 1
-      frequency[s[i]] = frequency[s[i]] + 1
+    s.each_byte do |ascii|
+      frequency[ascii.chr] = frequency[ascii.chr] + 1
     end
     frequency
   end
