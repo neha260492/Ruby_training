@@ -1,6 +1,6 @@
 class Array
   def power(x)
-    self.map { |element|
+    map { |element|
       element**x
     }
   end
