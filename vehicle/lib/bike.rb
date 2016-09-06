@@ -7,8 +7,8 @@ class Bike < Vehicle
     @dealer = dealer
   end
   def to_s
-  	puts "Name: #{self.name}"
-  	puts "Dealer: #{self.dealer}"
-  	puts "Price: #{self.price}"
+  	puts "Name: #{name}"
+  	puts "Dealer: #{dealer}"
+  	puts "Price: #{price}"
   end
 end
