@@ -1,16 +1,20 @@
 class Array
-  def group_by_even_odd(key_length_hash)
-    key_length_hash = group_by {|item| item.length}
-    # group items by even or odd length
+  def create_hash
+    length_value_hash = Hash.new
+    for item in self
+      item_length = item.to_s.length
+      length_value_hash[item_length] ||= []
+      length_value_hash[item_length] << item
+    end
+    length_value_hash
+  end
+  def create_even_odd_hash
+    length_value_hash = create_hash
     key_array = ["even", "odd"]
-    key_length_hash.inject({"odd" => [], "even" => []}) do |even_odd_hash,(key,value)|
-      even_odd_hash[key_array[key % 2]].push(value)
+    length_value_hash.inject({ "even" => [], "odd" => [] }) do |even_odd_hash, (key, value)|
+      even_odd_hash[key_array[key.to_i % 2]].push(value)
       even_odd_hash
     end
-  end
+  end 
 end
-
-puts "enter the strings separated by whitespaces"
-array = gets.split(" ")
-even_odd_hash = array.group_by_even_odd({})
-puts even_odd_hash
+		
