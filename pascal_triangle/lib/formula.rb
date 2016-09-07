@@ -2,7 +2,7 @@ class Formula
   def pascal(n)
   	for row in 0..n
   		for column in 0..row
-  			print "#{combination(row, column)} " 
+  			yield "#{combination(row, column)} " 
   		end
   		puts
   	end

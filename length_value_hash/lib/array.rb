@@ -6,7 +6,7 @@ class Array
       length_value_hash[item_length] ||= []
       length_value_hash[item_length] << item
     end
-    p length_value_hash
+    length_value_hash
   end
 end
 		

@@ -1,4 +1,4 @@
 require_relative "../lib/formula"
 
-pscl = Formula.new
-pscl.pascal(8)
+triangle = Formula.new
+triangle.pascal(8) {|value| print value, " "}
