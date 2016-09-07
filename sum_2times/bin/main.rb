@@ -1,4 +1,4 @@
-require_relative "../lib/time"
+require_relative "../lib/timesum"
 
 puts "enter time1"
 time1 = gets.chomp
