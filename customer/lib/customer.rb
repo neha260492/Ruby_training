@@ -1,24 +1,28 @@
 class Customer
-  @@serial_no = 1000000
+  @@account_no = 1000000
 
   attr_reader :name, :account_no, :balance
 
   def initialize(name)
-    @@serial_no += 1
+    @@account_no += 1
     @name = name
-    @account_no = @@serial_no
+    @acc_no = @@account_no
     @balance = 1000
   end
 
   def deposit(amount)
-    @balance = @balance + amount
+    if amount > 0
+      @balance = @balance + amount
+    else
+      puts 'invalid value'
+    end
   end
 
   def withdraw(amount)
     if @balance >= amount
       @balance = @balance - amount
     else
-      puts "Insufficient funds"
+      puts 'Insufficient funds'
     end
   end
 

@@ -1,10 +1,8 @@
 class String
+
   def palindrome?
     str = downcase
-    if str == str.reverse
-      true
-    else
-      false
-    end
+    str == str.reverse
   end
+  
 end

@@ -1,6 +1,7 @@
 class String
+
   def string_reversal
-    chomp
-    split(" ").reverse.join(" ")
+    split(' ').reverse.join(' ')
   end
+  
 end

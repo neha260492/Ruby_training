@@ -1,7 +1,7 @@
-require_relative "../lib/customer"
+require_relative '../lib/customer'
 
-customer1 = Customer.new("Neha Agrawal")
-customer2 = Customer.new("PSTakecare")
+customer1 = Customer.new('Neha Agrawal')
+customer2 = Customer.new('PSTakecare')
 
 p customer1
 p customer2

@@ -1,8 +1,7 @@
 class Series
-  def initialize(max)
+  
+  def fibonacci(max)
     @max = max
-  end    
-  def fibonacci
     first = 1
     second = 1
     yield first
@@ -12,4 +11,5 @@ class Series
       first = second - first
     end
   end
+  
 end

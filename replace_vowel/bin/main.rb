@@ -1,4 +1,3 @@
-require_relative "../lib/string"
+require_relative '../lib/string'
 
-line = gets
-puts line.replace_vowel
+puts gets.chomp.replace_vowel

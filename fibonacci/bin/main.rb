@@ -1,4 +1,4 @@
-require_relative "../lib/series"
+require_relative '../lib/series'
 
-fib= Series.new(1000)
-fib.fibonacci {|number| print number, " "}
+fib = Series.new
+fib.fibonacci(1000) { |number| print number, ' ' }

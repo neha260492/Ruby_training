@@ -1,3 +1,3 @@
-require_relative "../lib/string"
+require_relative '../lib/string'
 
 p gets.string_reversal

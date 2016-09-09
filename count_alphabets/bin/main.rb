@@ -1,4 +1,3 @@
-require_relative "../lib/string"
+require_relative '../lib/string'
 
-line = "neha agrawal"
-p line.count_alphabets
+p gets.chomp.count_alphabets
